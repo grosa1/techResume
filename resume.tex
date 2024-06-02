@@ -11,17 +11,30 @@
 
 \usepackage[default]{lato}
 
+% macro
+\newcommand{\ie}{\emph{i.e.,}\xspace}
+\newcommand{\eg}{\emph{e.g.,}\xspace}
+\newcommand{\etc}{etc.\xspace}
+\newcommand{\etal}{\emph{et~al.}\xspace}
+\newcommand{\secref}[1]{Section~\ref{#1}\xspace}
+\newcommand{\figref}[1]{Fig.~\ref{#1}\xspace}
+\newcommand{\listref}[1]{Listing~\ref{#1}\xspace}
+\newcommand{\tabref}[1]{Table~\ref{#1}\xspace}
+\newcommand{\tool}[1]{{\sc #1}\xspace}
+\newcommand{\commitref}[1]{$\mathtt{#1}$\xspace}
+\newcommand{\RQ}[1]{RQ$_{\textbf{#1}}$\xspace}
+
 \renewcommand{\itemmarker}{{\small\textbullet}}
 \renewcommand{\ratingmarker}{\faCircle}
 
 \begin{document}
-\name{Giovanni Rosa}
+\name{Giovanni Rosa, PhD}
 \tagline{AI Engineer @ Technology Reply}
 \personalinfo{
 	\email{grosa23@yahoo.com}
-	\github{grosa1}
+	\homepage{giovannirosa.com}
 	\linkedin{giovanni-rosa-5298b0148}
-        \location{Campobasso, Italy}
+    \location{Italy}
 }
 
 \makecvheader
@@ -31,14 +44,16 @@
 \columnratio{0.55}
 
 \begin{paracol}{1}       
+
+    \input{sections/profile}
+
+    \input{sections/skills}
         
-    \input{sections/work_experience.tex}
+    \input{sections/work_experience}
 	
-    \input{sections/education.tex}
+    \input{sections/education}
 	
-    \input{sections/publications.tex}
-     
-    % \input{sections/side_projects.tex}
+    \input{sections/publications}
 
 \end{paracol}
 

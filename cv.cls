@@ -228,10 +228,8 @@
 %   }
 
 \newcommand{\cveducation}[4]{%
-  \ifstrequal{#1}{}{}{{\small\makebox[0.5\linewidth][l]{\color{emphasis}\textbf{#1}}}}
-  \ifstrequal{#2}{}{}{{\small\makebox[0.5\linewidth][r]{\color{emphasis}\textbf{#2}}}}\par\smallskip
-  \ifstrequal{#4}{}{}{{\small\makebox[0.5\linewidth][l]{\faClipboardCheck~#4}}}
-  \ifstrequal{#3}{}{}{{\small\makebox[0.5\linewidth][r]{\faCalendar~#3}}}\par
+  \ifstrequal{#1}{}{}{{\small\makebox[0.5\linewidth][l]{\color{emphasis}\textbf{#1}, \emph{#2}}}}
+  \ifstrequal{#3}{}{}{{\small\makebox[0.5\linewidth][r]{\color{emphasis}\textbf{#3}, #4}}}\par\smallskip
   % \ifstrequal{#4}{}{}{{\small\makebox[0.5\linewidth][r]{\faClipboardCheck #4}}}\par
   \medskip\normalsize
   }
@@ -240,7 +238,7 @@
   \ifstrequal{#1}{}{}{{\small\makebox[0.5\linewidth][l]{\color{emphasis}\textbf{#1}}}}
   \ifstrequal{#2}{}{}{{\small\makebox[0.5\linewidth][r]{\color{emphasis}\textbf{#2}}}}\par\smallskip
   \ifstrequal{#4}{}{{\small\makebox[0.5\linewidth][l]{}}}{{\small\makebox[0.5\linewidth][l]{#4}}}
-  \ifstrequal{#3}{}{}{{\small\makebox[0.5\linewidth][r]{\faCalendar~#3}}}\par
+  \ifstrequal{#3}{}{}{{\small\makebox[0.5\linewidth][r]{#3}}}\par
   \medskip\normalsize
   }
 
@@ -249,15 +247,15 @@
 %   \ifstrequal{#1}{}{}{{\small\makebox[0.5\linewidth][l]{\color{emphasis}\textbf{#1}}}}
 %   \ifstrequal{#2}{}{}{{\small\makebox[0.5\linewidth][r]{#2, \color{emphasis}\textbf{#4}}}}\par\smallskip
 %   \ifstrequal{#3}{}{}{{\small\makebox[0.5\linewidth][l]{#5}}}
-%   \ifstrequal{#2}{}{}{{\small\makebox[0.5\linewidth][r]{\faCalendar~#3}}}\par
+%   \ifstrequal{#2}{}{}{{\small\makebox[0.5\linewidth][r]{#3}}}\par
 %   \medskip\normalsize
 %   }
 
-\newcommand{\cvexperience}[5]{%
-  \ifstrequal{#1}{}{}{{\small\makebox[0.5\linewidth][l]{\color{emphasis}\textbf{#1}}}}
-  \ifstrequal{#2}{}{}{{\small\makebox[0.5\linewidth][r]{\color{emphasis} \textbf{#4}, #2}}}\par\smallskip
-  \ifstrequal{#3}{}{}{{\small\makebox[0.5\linewidth][l]{#5}}}
-  \ifstrequal{#2}{}{}{{\small\makebox[0.5\linewidth][r]{\faCalendar~#3}}}\par
+\newcommand{\cvexperience}[4]{%
+  \ifstrequal{#1}{}{}{{\small\makebox[0.5\linewidth][l]{\color{emphasis}\textbf{#1} \emph{(#2)}}}}
+  \ifstrequal{#3}{}{}{{\small\makebox[0.5\linewidth][r]{\color{emphasis} \textbf{#3}, #4}}}\par\smallskip
+  % \ifstrequal{#3}{}{}{{\small\makebox[0.5\linewidth][l]{#5}}}
+  % \ifstrequal{#2}{}{}{{\small\makebox[0.5\linewidth][r]{#3}}}\par
   \medskip\normalsize
   }
 
