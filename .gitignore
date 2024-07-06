@@ -1,1 +1,8 @@
 .DS_Store
+*.xmpi
+*.aux
+*.fdb_*
+*.log
+*.out
+*.gz
+*.fls
